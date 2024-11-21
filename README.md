@@ -1,5 +1,19 @@
 # CAR PRICE PREDICTOR
 
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+3. [Skills Demonstrated](#skills-demonstrated)
+4. [Installation & Setup](#installation--setup)
+5. [How It Works](#how-it-works)
+6. [Model Performance](#model-performance)
+7. [License](#license)
+8. [Contributing](#contributing)
+9. [Acknowledgements](#acknowledgements)
+
+
+
+
 ## Project Overview
 
 **CAR PRICE PREDICTOR** is a machine learning-powered web application that predicts car prices based on several features such as **make**, **model**, **mileage**, **condition**, and **year of manufacture**. The app uses a **linear regression** model trained on a custom dataset to provide highly accurate predictions. It’s designed to help users make informed decisions when buying or selling a vehicle based on the data provided.
@@ -23,6 +37,15 @@
    - The preprocessing steps include converting categorical variables, and scaling numerical features.
 
 ---
+
+## Skills Demonstrated
+- **Machine Learning:** Applied linear regression to predict car prices based on input features. 
+- **Feature Engineering:** Performed advanced feature engineering, including one-hot encoding and feature scaling.
+- **Data Preprocessing:** Cleaned and transformed raw data for model readiness.
+- **Web Development:** Built a user-friendly web interface with Flask to interact with the machine learning model.
+- **Model Evaluation:** Achieved high model accuracy (99%) and evaluated performance.
+
+
 
 ## Installation & Setup
 
