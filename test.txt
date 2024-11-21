@@ -1,7 +1,6 @@
 car-price-prediction/
 ├── app/
-│   ├── __init__.py          # Initializes the Flask app
-│   ├── routes.py            # Contains all the Flask routes (e.g., for predictions)
+│   ├── app.py          # Initializes the Flask app
 │   ├── static/              # Static files (HTML, CSS, JS, images)
 │   │   ├── index.html       # Main page where users input data (HTML)
 │   │   ├── style.css        # Custom CSS for the website
@@ -12,12 +11,13 @@ car-price-prediction/
 │       └── utils.py         # Helper functions (e.g., for loading the model)
 ├── data/                    # Folder for storing data files
 │   └── CarPricesPrediction.csv  # Original dataset for training the model
+│   └── processed_X.csv  # processed X data
+│   └── processed_y.csv  # processed Y data
 ├── notebooks/                # Jupyter notebooks for exploration and model development
 │   └── exploration.ipynb    # Exploratory data analysis (EDA) and feature engineering
-├── scripts/                  # Folder for scripts related to training the model
-│   ├── train_model.py       # Script to train and save the model
-│   └── evaluate_model.py    # Script to evaluate the model's performance
+├── model/                  # Folder for scripts related to training the model
+│   ├── data_processing.py       # Script to train and save the model
+│   └── model_create.py    # Script to create and evaluate model.
 ├── requirements.txt         # List of dependencies for the project (Flask, sklearn, etc.)
 ├── config.py                # Configuration file for app settings (optional)
-├── README.md                # Project description, setup instructions
-└── run.py                   # Script to run the Flask server locally
+└── README.md                # Project description, setup instructions

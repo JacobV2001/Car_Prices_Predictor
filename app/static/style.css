@@ -1,0 +1,172 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    overflow-y: auto; /* Enable scrolling */
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    font-size: 1.8rem; /* Slightly smaller font size */
+    color: #007bff;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Subtitle styling */
+h4 {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #6c757d;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Form container */
+#predict-form {
+    background-color: #fff;
+    padding: 15px; /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px; /* Reduced max-width */
+    margin-top: 15px; /* Reduced top margin */
+}
+
+/* Form Fields */
+form {
+    display: grid;
+    grid-gap: 10px; /* Reduced space between form elements */
+    text-align: left;
+}
+
+/* Label for form elements */
+label {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    color: #495057;
+    font-weight: bold;
+}
+
+/* Input and Select Fields */
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 0.95rem; /* Slightly smaller font size */
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input/Select */
+select:focus, input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    padding: 10px; /* Reduced padding */
+    font-size: 1rem; /* Slightly smaller font size */
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+/* Button Hover and Active States */
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Prediction Result */
+#prediction-result {
+    margin-top: 20px; /* Reduced margin */
+    font-size: 1.1rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #28a745;
+    text-align: center;
+}
+
+/* Styling for the Prediction Result */
+#prediction-result {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* This targets the <h3> element specifically inside the result container */
+#prediction-result h3 {
+    background-color: #28a745; /* Green background for the result */
+    color: white;
+    font-size: 1.4rem; /* Slightly smaller font size */
+    font-weight: bold;
+    padding: 12px; /* Reduced padding */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px; /* Reduced max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 15px; /* Reduced top margin */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animation for when the result appears (smooth transition) */
+#prediction-result h3.show {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+/* Animation to hide the result */
+#prediction-result h3.hide {
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem; /* Slightly smaller title on small screens */
+    }
+
+    h4 {
+        font-size: 0.95rem; /* Slightly smaller subtitle on small screens */
+    }
+
+    #predict-form {
+        padding: 12px; /* Reduced padding for smaller screens */
+        width: 90%;
+    }
+
+    button {
+        padding: 8px; /* Reduced padding */
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+
+    #prediction-result h3 {
+        font-size: 1.3rem; /* Slightly smaller font size for result */
+        padding: 10px; /* Reduced padding */
+    }
+}

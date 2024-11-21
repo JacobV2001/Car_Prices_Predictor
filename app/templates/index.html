@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predictor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <h1>CAR PRICE PREDICTOR</h1>
+    <h4>Fill In Below</h4>
+
+    <form id="predict-form">
+        <!-- Make -->
+        <label for="make">Make:</label>
+        <select name="make">
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+
+        <!-- Model -->
+        <label for="model">Model:</label>
+        <select name="model">
+            <option value="Altima">Altima</option>
+            <option value="Camry">Camry</option>
+            <option value="Civic">Civic</option>
+            <option value="F-150">F-150</option>
+            <option value="Silverado">Silverado</option>
+        </select>
+
+        <!-- Condition -->
+        <label for="condition">Condition:</label>
+        <select name="condition">
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Fair">Fair</option>
+        </select>
+
+        <!-- Mileage -->
+        <label for="mileage">Mileage:</label>
+        <input type="number" name="mileage" placeholder="MILEAGE" required>
+        
+        <!-- Year -->
+        <label for="year">Year:</label>
+        <input type="number" name="year" placeholder="YEAR" required>
+
+        <button type="submit">Predict Price</button>
+    </form>
+    <div id="prediction-result"></div>
+
+</body>
+</html>
