@@ -7,9 +7,6 @@
 4. [Installation & Setup](#installation--setup)
 5. [How It Works](#how-it-works)
 6. [Model Performance](#model-performance)
-7. [License](#license)
-8. [Contributing](#contributing)
-9. [Acknowledgements](#acknowledgements)
 
 
 
