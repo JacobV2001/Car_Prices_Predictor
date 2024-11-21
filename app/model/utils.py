@@ -9,6 +9,7 @@ def load_model(model_path):
         model = pickle.load(f)
     return model
 
+# function to frame and return data from input
 def process_input(make, model_name, condition, mileage, year):
     input_data = pd.DataFrame({
         'Make': [make],
@@ -18,6 +19,8 @@ def process_input(make, model_name, condition, mileage, year):
         'Year': [year]
     })
 
+    # send data to be processed
     input_data = process_data(input_data)
 
+    # return array of data
     return np.array(input_data)

@@ -4,7 +4,7 @@ from sklearn.preprocessing import OneHotEncoder
 # function to process input data for prediction
 def process_data(data):
 
-    # features added
+    # features added for one-hot-encoding
     makes = ['Chevrolet', 'Ford', 'Honda', 'Nissan', 'Toyota']
     models = ['Altima', 'Camry', 'Civic', 'F-150', 'Silverado']
 
@@ -27,12 +27,11 @@ def process_data(data):
     data['Age'] = 2024 - data['Year']
     data.drop(columns=['Year'], inplace=True)
 
-    # reorder columns
+    # for reordering columns
     make_columns = [col for col in data.columns if col.startswith('Make_')]
     model_columns = [col for col in data.columns if col.startswith('Model_')]
-    other_columns = [col for col in data.columns if col not in make_columns and col not in model_columns]
 
-    # final order
+    # make the order correct so it maps with the model
     final_column_order = make_columns + model_columns + ['Mileage', 'Age', 'Condition']
     data = data[final_column_order]
 

@@ -1,7 +1,9 @@
 $(document).ready(function() {
+    // execute following when form is triggered
     $('#predict-form').submit(function(event) {
-        event.preventDefault();
+        event.preventDefault(); // stops page from refreshing
 
+        // get form data into string
         var formData = $(this).serialize();
 
         $.ajax({
